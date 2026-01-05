@@ -1,16 +1,23 @@
-# Entornos y logs
-*.log
-.DS_Store
-
-# Python
+# Archivos y directorios de caché del sistema
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.DS_Store
+
+# Artifacts y Modelos (CRÍTICO)
+# Evitar subir archivos grandes de modelos entrenados (guárdelos en un repositorio de MLflow o S3)
+/artifacts/*.pkl
+/artifacts/*.h5
+/artifacts/*.pt
+/artifacts/*.bin
+
+# Logs
+*.log
+
+# Datos Grandes (Si no son muestras pequeñas)
+/data/raw/
+/data/processed/
+
+# Entorno Virtual
 venv/
-.env
-
-# Dataset (Opcional, si es muy grande, pero necesario para este caso)
-# data/
-
-# MLOps/Artefactos
-# No ignoramos 'artifacts/' porque los modelos .pkl son CRÍTICOS para la demo.
+.venv/
