@@ -1,0 +1,16 @@
+# Entornos y logs
+*.log
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+
+# Dataset (Opcional, si es muy grande, pero necesario para este caso)
+# data/
+
+# MLOps/Artefactos
+# No ignoramos 'artifacts/' porque los modelos .pkl son CRÍTICOS para la demo.
