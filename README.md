@@ -30,9 +30,10 @@ El pipeline actual utiliza:
 Para replicar el entorno de entrenamiento y validación:
 
 ```bash
-# Clonar el repositorio:
-git clone git@github.com:DaniAngel79/Phishing-Detector-MLOps.git
-cd Phishing-Detector-MLOps
+Paso 1: Clonar y Preparar el Entorno
 
-# Instalar dependencias:
-pip install -r requirements.txt
+```bash
+git clone [https://github.com/DanielAngel79/Phishing-Detector-ML.git](https://github.com/DanielAngel79/Phishing-Detector-ML.git)
+cd Phishing-Detector-ML
+python3 -m venv venv
+source venv/bin/activate
